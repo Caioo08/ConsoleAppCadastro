@@ -27,8 +27,8 @@ namespace ConsoleAppCadastro
                 {
                     case "a":
                         Console.WriteLine("Deseja cadastrar um aluno [S-SIM/N-NÃO]?");
-                        string resp_a = Console.ReadLine().ToLower();
-                        if (resp_a == "s" && cont_a <= 5)
+                        string resp_c = Console.ReadLine().ToLower();
+                        if (resp_c == "s" && cont_a < 5)
                         {
                             Console.WriteLine("Aluno cadastrado.");
                             cont_a++;
@@ -38,13 +38,12 @@ namespace ConsoleAppCadastro
                         {
                             Console.Write("A quantidade de vagas foi atingida.");
                         }
-                        Console.WriteLine("Deseja cadastrar um aluno novamente [S-SIM/N-NÃO]?");
-                        resp_a = Console.ReadLine().ToLower();
+                        
                         break;
                     case "m":
                         Console.WriteLine("Deseja cadastrar um aluno [S-SIM/N-NÃO]?");
-                        string resp_m = Console.ReadLine().ToLower();
-                        if (resp_m == "s" && cont_a <= 5)
+                        resp_c = Console.ReadLine().ToLower();
+                        if (resp_c == "s" && cont_a < 5)
                         {
                             Console.WriteLine("Aluno cadastrado.");
                             cont_m++;
@@ -54,13 +53,12 @@ namespace ConsoleAppCadastro
                         {
                             Console.Write("A quantidade de vagas foi atingida.");
                         }
-                        Console.WriteLine("Deseja cadastrar um aluno novamente [S-SIM/N-NÃO]?");
-                        resp_m = Console.ReadLine().ToLower();
+                        
                         break;
                     case "e":
                         Console.WriteLine("Deseja cadastrar um aluno [S-SIM/N-NÃO]?");
-                        string resp_e = Console.ReadLine().ToLower();
-                        if (resp_e == "s" && cont_a <= 5)
+                        resp_c = Console.ReadLine().ToLower();
+                        if (resp_c == "s" && cont_a < 5)
                         {
                             Console.WriteLine("Aluno cadastrado.");
                             cont++;
@@ -70,13 +68,12 @@ namespace ConsoleAppCadastro
                         {
                             Console.Write("A quantidade de vagas foi atingida.");
                         }
-                        Console.WriteLine("Deseja cadastrar um aluno novamente [S-SIM/N-NÃO]?");
-                        resp_e = Console.ReadLine().ToLower();
+                        
                         break;
                     case "d":
                         Console.WriteLine("Deseja cadastrar um aluno?");
-                        string resp_d = Console.ReadLine().ToLower();
-                        if (resp_d == "s" && cont_a <= 5)
+                        resp_c = Console.ReadLine().ToLower();
+                        if (resp_c == "s" && cont_a < 5)
                         {
                             Console.WriteLine("Aluno cadastrado. [S-SIM/N-NÃO]");
                             cont++;
@@ -86,8 +83,7 @@ namespace ConsoleAppCadastro
                         {
                             Console.Write("A quantidade de vagas foi atingida.");
                         }
-                        Console.WriteLine("Deseja cadastrar um aluno novamente [S-SIM/N-NÃO]? ");
-                        resp_d = Console.ReadLine().ToLower();
+                        
                         break;
                     default: Console.WriteLine("Opção inválida");
                         break;
